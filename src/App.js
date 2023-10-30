@@ -1,14 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
+import Navbar from './Navbar';
+import Card from './Card';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>CS 230L</h1>
-      <h2>Section - 03</h2>
-      <p>WVU ID: 800357587</p>
-      <p>Hi I am Chloe Johnson</p>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Hello from V2</h1>
+      </header>
     </div>
   );
 }
