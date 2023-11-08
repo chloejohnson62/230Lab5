@@ -1,4 +1,7 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import Contact from './Contact';
 import "bootstrap/dist/css/bootstrap.css";
 import logo from './logo.svg';
 import Navbar from './Navbar';
@@ -8,14 +11,16 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     <Navbar />
-     <h1>CS 230L</h1>
-    <h2>Section 03</h2>
-    <p>WVU ID 800357587</p>
-    <p> Hi! I am Chloe</p>
-     <Card />
-    </div>
-  );
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Card" element={<Card />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  </div>
+);
 }
 
 export default App;
