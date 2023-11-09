@@ -26,7 +26,7 @@ function Contact() {
             </div>
             <div className="form-group">
                 <label htmlFor="number">Phone Number</label>
-                <input type="number" className="form-control" style= {inputStyle} id="phonenumber" placeholder="Enter your phone number" />
+                <input type="text" className="form-control" style= {inputStyle} id="phonenumber" placeholder="Enter your phone number" />
             </div>
             <div className="form-group">
                 <label htmlFor="email">Email address</label>
